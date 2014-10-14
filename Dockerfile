@@ -1,8 +1,9 @@
 FROM kjunine/ubuntu
 MAINTAINER Daniel Ku "kjunine@gmail.com"
+ENV REFRESHED_AT 2014-10-14
 
-RUN curl -OL https://mms.mongodb.com/download/agent/monitoring/mongodb-mms-monitoring-agent_2.5.0.116-1_amd64.deb && \
-    dpkg -i mongodb-mms-monitoring-agent_2.5.0.116-1_amd64.deb
+RUN curl -OL https://mms.mongodb.com/download/agent/monitoring/mongodb-mms-monitoring-agent_2.6.0.123-1_amd64.deb && \
+    dpkg -i mongodb-mms-monitoring-agent_2.6.0.123-1_amd64.deb
 
 ENV MMS_API_KEY key
 
